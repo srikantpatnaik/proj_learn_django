@@ -1,12 +1,14 @@
 from django.conf.urls import patterns, include, url
 #added by srikant
 from app_add.views import app_add
+from app_add_database.views import app_add_database
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^add/$',app_add),
+    url(r'^add-database/$',app_add_database),
     # Examples:
     # url(r'^$', 'learn_django.views.home', name='home'),
     # url(r'^learn_django/', include('learn_django.foo.urls')),
